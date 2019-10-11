@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+<style type="text/css">
+		
+	
+    .re{
+      font-size: 30px;
+      font-style: bold;
+      color: white;
+    }
+    .nav-link{
+      font-style: bold;
+      font-size: 20px;
+      color: white;
+    }
+  .jumbotron 
+     {/*
+           background-repeat: no-repeat;*/
+          background-image: url("img/o.jpg " );
+        
+          color: #fff;
+      }
+ 
+
+    hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid white;
+}
+		.b{
+			text-align: center;
+			font-style: bold;
+			font-size: 20px;
+		}
+		.hi{
+			text-align: center;
+			font-size: 30px;
+			font-style: italic;
+
+		}
+	
+		
+   .input-group{
+    padding-left: 400px;
+  }
+</style></head>
+<body>
+
+<!--header-->
+<div class="jumbotron text-center">
+
+  <h1>Coaching centers</h1> 
+  <p>We specialize in Coaching centers</p> 
+  <form class="form-inline">
+    <div class="input-group">
+
+      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Subscribe</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!--navigation bar-->
+<div class="container-fluid">
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		 <div class="re">
+				 <a href="index.html">
+				 	<span class="glyphicon glyphicon-fire text-white">CoachingCenters</span>
+				 </a>
+			</div>
+			<ul>
+			
+				<li class="nav-item">
+					<a href="Gallery.html" class="nav-link text-white"><span class="glyphicon glyphicon-picture">Gallery</span></a>
+				</li>
+			</ul>
+			<ul>
+				 <li class="nav-item">
+					 <a href="register.html" class="nav-link text-white"><i class='fas fa-address-book'>register</i></a>
+				</li>
+			</ul>
+					<ul class="nav justify-content-end ml-auto">
+			
+						<li class="nav-item">
+							<a href="index.html" class="nav-link text-white"><i class='fas fa-house-damage'>Home</i></a>
+						</li>
+						<li class="nav-item">
+						    <a href="about.html" class="nav-link text-white"><i class='far fa-clipboard'>About</i></a>
+						</li>
+						<li class="nav-item">
+							<a href="service.html" class="nav-link text-white"><i class='fab fa-app-store-ios'></i>Service</i></a>
+						</li>
+						<li class="nav-item">
+								<a href="contactus.html" class="nav-link text-white"><i class="fa fa-phone">Contact</i></a>
+						</li>
+
+					</ul>
+	</nav>
+</div>
+
+
+<br>
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="hi">
+
+			<div class="b text-info"><h1>Registration</h1></div>
+
+			<div class="form-group text-info">
+				
+
+					Username:
+					<div>
+						<input type="text" name="name" placeholder="username" class="rounded border-info" required>
+					</div>
+					Email:
+					<div>
+						<input type="email" name="name" placeholder="email" class="rounded border-info" required>
+					</div>
+					Mobile no:
+					<div>
+						<input type="number" name="name" placeholder="mobile no" class="rounded border-info" required>
+					</div>
+					dob:
+					 <div> 
+					 	<input type="date" name="bday" class="rounded border-info">
+					 </div>
+					password:
+					<div>
+						<input type="password" name="name" placeholder="password" class="rounded border-info" required>
+					</div>
+					Re-enter password:
+					<div>
+					<input type="password" name="name" placeholder="Re-enter" class="rounded border-info"required>
+					</div>
+					<br>
+					<div>
+						
+											
+<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <input type="email" id="defaultForm-email" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="defaultForm-email" required>Your email</label>
+        </div>
+
+        <div class="md-form mb-4">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <input type="password" id="defaultForm-pass" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="defaultForm-pass" required>Your password</label>
+        </div>
+
+        <div class="md-form mb-4">
+          <a href="forgotpwd.html">forgotpassword</a>
+        </div>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <a href="Centers1.html"><button class="btn btn-default">Login</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="text-center">
+  <a href="#" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm"><button class="btn btn-secondary border-info"> submit</button></a>
+</div>
+
+					</div>
+					
+		
+					
+<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <input type="email" id="defaultForm-email" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="defaultForm-email" required>Your email</label>
+        </div>
+
+        <div class="md-form mb-4">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <input type="password" id="defaultForm-pass" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="defaultForm-pass" required>Your password</label>
+        </div>
+
+        <div class="md-form mb-4">
+          <a href="forgotpwd.html">forgotpassword</a>
+        </div>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <a href="Centers1.html"><button class="btn btn-default">Login</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="text-center">
+  <a href="#" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm"> 
+  	<button class="rounded border-info">Already have an account</button></a>
+</div>
+
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+
+<!--footer-->
+
+<div class="container-fluid ">
+  
+    <div class="row bg-dark h text-white">
+
+      <div class="col-md-4 text-center">
+      
+          <h3>Company</h3>
+          <hr>
+          <div>Privacy Policy</div>
+          <div>Terms of Use</div>
+          <div>Contact Us</div>
+            <div>Affiliate</div>
+            <div>About Us</div>
+        </div>
+      <div class="col-md-4 text-center">
+          <h3>Community</h3>
+          <hr>
+          <div>Instagram</div>
+          <div>Facebook</div>
+          <div>Twitter</div>
+          <div>Linkedin</div>
+          <div>Youtube</div>
+          <div><h5 class="mt-5 font-italic">Follow us on</h5></div>
+          <i class='fab fa-facebook'></i>
+          <i class='fab fa-google ml-3'></i>
+          <i class='fab fa-instagram ml-3'></i>
+          <i class='fab fa-linkedin ml-3'></i>
+          <i class='fab fa-youtube ml-3'></i>
+        </div>
+      
+      <div class="col-md-4 text-center">
+    
+          <h3>Support</h3>
+          <hr>
+          <div>Support Center</div>
+        </div>
+        
+
+      </div>
+    <br>
+<div class="container-fluid">
+  
+    <div class=" bg-white">
+                <div class=" float-right d-inline-block" style="font-size: 15px;">
+                  Privacy Policy|Terms of use
+                </div>
+                
+       <div class=" d-inline-block" style="font-size:15px;">
+      
+              Copyright &copy; Your Website 2019
+          </div>
+
+</div>
+</div>
+
+</body>
+ <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+
+ <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</html>
